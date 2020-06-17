@@ -25,3 +25,21 @@ for group in groupedWordDict:
     for wordForm in group:
         print("{}       |     {}     |        {}".format(wordForm.normal_form, wordForm.pos, wordForm.frequency))
 ### ---           --- ###
+
+
+"""
+### -- ОБУЧЕНИЕ LSTM -- ###
+from GramAnalyser.train import train
+train()
+### ---           --- ###
+"""
+
+
+"""
+### --- ТЕСТ LSTM --- ###
+from GramAnalyser.lstm_test import test_on_all_data_sets
+from GramAnalyser.analyser import Analyser
+analyser = Analyser()  
+test_on_all_data_sets(analyser)
+### ---           --- ###
+"""
