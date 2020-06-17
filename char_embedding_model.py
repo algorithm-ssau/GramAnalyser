@@ -108,4 +108,57 @@ class CharEmbeddingsModel:
         test_idx = perm[border:]
         return train_idx, test_idx
 
-    
+    @staticmethod
+    def prepare_words(dictionary, char_set, max_word_length):
+        chars = np.zeros((dictionary.size(), max_word_length), dtype=np.int)
+        y = np.zeros((dictionary.size(), ), dtype=np.int)
+        for i in range(dictionary.size()):
+            y[i] = i
+        for i, word in enumerate(dictionary.words):
+            word_char_indices = [char_set.index(ch) if ch in char_set else len(char_set)
+                                 for ch in word][-max_word_length:]
+            chars[i, -min(len(word), max_word_length):] = word_char_indices
+        return chars, y
+
+
+def get_char_model(
+        char_layer,
+        max_word_length: int,
+        dictionary: WordDictionary,
+        char_set: str,
+        embeddings: np.array,
+        model_weights_path: str,
+        model_config_path: str,
+        batch_size: int=128,
+        test_part: float=0.2,
+        seed: int=42):
+    """
+    Обучение или загрузка char-level функции.
+
+    :param char_layer: заданная char-level функция, которую и обучаем.
+    :param max_word_length: максимальная длина слова, по которой идёт обрезка.
+    :param dictionary: список слов.
+    :param char_set: набор символов, для которых строятся эмбеддинги.
+    :param embeddings: матрица эмбеддингов.
+    :param batch_size: размер батча.
+    :param model_weights_path: путь, куда сохранять веса модели.
+    :param model_config_path: путь, куда сохранять конфиг модели.
+    :param test_part: доля выборки, которая станет test.
+    :param seed: seed для ГПСЧ.
+    """
+    model = CharEmbeddingsModel()
+    if model_config_path is not None and os.path.exists(model_config_path):
+        assert model_weights_path is not None and os.path.exists(model_weights_path)
+        model.load(model_config_path, model_weights_path)
+    else:
+        dictionary = copy.deepcopy(dictionary)
+        dictionary.shrink(embeddings.shape[0])
+        model.build(dictionary_size=dictionary.size(),
+                    word_embeddings_dimension=embeddings.shape[1],
+                    max_word_length=max_word_length,
+                    word_embeddings=embeddings.T,
+                    char_layer=char_layer)
+        model.train(dictionary, char_set, test_part, seed, batch_size, max_word_length)
+        if model_config_path is not None and model_weights_path is not None:
+            model.save(model_config_path, model_weights_path)
+    return model.char_layer

@@ -10,14 +10,14 @@ class BuildModelConfig(object):
         self.gram_hidden_size = 30
         self.gram_dropout = 0.3
 
-        self.use_chars = True
+        self.use_chars = True ### use_chars или use_word_embeddings - True
         self.char_max_word_length = 30
         self.char_embedding_dim = 10 
         self.char_function_hidden_size = 128
         self.char_dropout = 0.3
-        self.char_function_output_size = 64  # 
+        self.char_function_output_size = 64
 
-        self.use_word_embeddings = False
+        self.use_word_embeddings = False ### use_chars или use_word_embeddings - True
         self.word_embedding_dropout = 0.2
         self.word_max_count = 10000
         self.use_trained_char_embeddings = True
