@@ -304,7 +304,50 @@ class LSTMModel:
         print("Word accuracy: ", 1.0 - float(word_errors) / word_count)
         print("Sentence accuracy: ", 1.0 - float(sentence_errors) / sentence_count)
 
+    def predict_gram_analysis(self, sentences: List[List[str]], batch_size: int,
+                              build_config: BuildModelConfig) -> List[List[List[float]]]:
+        """
+        Предсказание полного грамматического разбора для предложений (грамммемы, части речи) с вероятностями
 
+        :param sentences: Список списков слов (список предложений)
+        :param build_config: Конфиг архитектуры модели.
+        :param batch_size: Количество предложений в выборке
+        :return: вероятности наборов граммем.
+        """
+        max_sentence_len = max([len(sentence) for sentence in sentences])
+        if max_sentence_len == 0:
+            return [[] for _ in sentences]
+        n_samples = len(sentences)
+
+        words = np.zeros((n_samples, max_sentence_len), dtype=np.int)
+        grammemes = np.zeros((n_samples, max_sentence_len, self.grammeme_vectorizer_input.grammemes_count()),
+                             dtype=np.float)
+        chars = np.zeros((n_samples, max_sentence_len, build_config.char_max_word_length), dtype=np.int)
+
+        for i, sentence in enumerate(sentences):
+            if not sentence:
+                continue
+            word_indices, gram_vectors, char_vectors = TrainingSetGenerator.getFeaturesForSentence(
+                sentence,
+                converter=self.converter,
+                morph=self.morph,
+                grammeme_vectorizer=self.grammeme_vectorizer_input,
+                max_word_len=build_config.char_max_word_length,
+                word_dictionary=self.word_dictionary,
+                word_count=build_config.word_max_count,
+                char_set=self.char_set)
+            words[i, -len(sentence):] = word_indices
+            grammemes[i, -len(sentence):] = gram_vectors
+            chars[i, -len(sentence):] = char_vectors
+
+        inputs = []
+        if build_config.use_word_embeddings:
+            inputs.append(words)
+        if build_config.use_gram:
+            inputs.append(grammemes)
+        if build_config.use_chars:
+            inputs.append(chars)
+        return self.main_model.predict(inputs, batch_size=batch_size)
 
 class ReversedLSTM(LSTM):
     def __init__(self, units, **kwargs):
