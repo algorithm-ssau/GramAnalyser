@@ -767,7 +767,7 @@
 15	него	он	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3
 16	влажно	влажно	ADV	Degree=Pos
 17	и	и	CONJ	_
-18	несвеже	несвежий	ADV	Degree=Pos
+18	несвеже	несвежий	ADJ	Degree=Cmp
 19	.	.	PUNCT	_
 
 1	Опаздывая	опаздывать	ADJ	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing
@@ -934,7 +934,7 @@
 17	пульсирующие	пульсировать	ADJ	Case=Nom|Degree=Pos|Number=Plur
 18	круги	круг	NOUN	Case=Nom|Gender=Masc|Number=Plur
 19	,	,	PUNCT	_
-20	расходившиеся	расходиться	VERB	Tense=Past|VerbForm=Conv|Voice=Mid
+20	расходившиеся	расходиться	ADJ	Case=Nom|Degree=Pos|Number=Plur
 21	из	из	ADP	_
 22	красной	красный	ADJ	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing
 23	точки	точка	NOUN	Case=Gen|Gender=Fem|Number=Sing
@@ -989,7 +989,7 @@
 17	постепенно	постепенно	ADV	Degree=Pos
 18	заштриховывался	заштриховываться	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid
 19	все	весь	ADV	Degree=Pos
-20	гуще	густой	ADV	Degree=Cmp
+20	гуще	гуща	ADV	Degree=Cmp
 21	,	,	PUNCT	_
 22	пока	пока	CONJ	_
 23	не	не	PART	_
@@ -1020,7 +1020,7 @@
 1	Гулкий	гулкий	ADJ	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing
 2	садовский	садовский	ADJ	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing
 3	дворик	дворик	NOUN	Case=Nom|Gender=Masc|Number=Sing
-4	замкнут	замкнутый	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+4	замкнут	замкнутый	NOUN	Case=Gen|Gender=Fem|Number=Plur
 5	был	быть	NOUN	Case=Nom|Gender=Masc|Number=Sing
 6	не	не	PART	_
 7	с	с	ADP	_
@@ -1291,7 +1291,7 @@
 12	не	не	PART	_
 13	может	мочь	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Notpast|VerbForm=Fin|Voice=Act
 14	быть	быть	VERB	VerbForm=Inf
-15	чист	чистый	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+15	чист	чистый	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Notpast|VerbForm=Fin|Voice=Act
 16	душой	душа	NOUN	Case=Ins|Gender=Fem|Number=Sing
 17	человек	человек	NOUN	Case=Nom|Gender=Masc|Number=Sing
 18	,	,	PUNCT	_
@@ -1462,7 +1462,7 @@
 21	.	.	PUNCT	_
 
 1	Петрович	пётр	NOUN	Case=Nom|Gender=Masc|Number=Sing
-2	подумал	подумать	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+2	подумал	подумать	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 3	и	и	CONJ	_
 4	,	,	PUNCT	_
 5	светло	светло	ADV	Degree=Pos
@@ -1592,7 +1592,7 @@
 
 1	Он	он	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3
 2	не	не	PART	_
-3	умел	умелый	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+3	умел	уметь	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 4	считать	считать	VERB	VerbForm=Inf
 5	время	время	NOUN	Case=Acc|Gender=Neut|Number=Sing
 6	.	.	PUNCT	_
@@ -3013,7 +3013,7 @@
 5	короче	короче	ADJ	Degree=Cmp
 6	,	,	PUNCT	_
 7	потому_что	потому_что	CONJ	_
-8	короче	короткий	ADV	Degree=Cmp
+8	короче	короче	ADV	Degree=Cmp
 9	становились	становиться	VERB	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Mid
 10	дни	день	NOUN	Case=Nom|Gender=Masc|Number=Plur
 11	.	.	PUNCT	_
@@ -3336,7 +3336,7 @@
 6	выставочным	выставочный	ADJ	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing
 7	экземпляром	экземпляр	NOUN	Case=Ins|Gender=Masc|Number=Sing
 8	и	и	CONJ	_
-9	служила	служилый	ADJ	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short
+9	служила	служить	VERB	Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 10	лишь	лишь	PART	_
 11	поводом	повод	NOUN	Case=Ins|Gender=Masc|Number=Sing
 12	к	к	ADP	_
@@ -3505,7 +3505,7 @@
 26	роскошные	роскошный	ADJ	Case=Nom|Degree=Pos|Number=Plur
 27	,	,	PUNCT	_
 28	игрушечные	игрушечный	ADJ	Case=Acc|Degree=Pos|Number=Plur
-29	железные	железный	ADJ	Case=Acc|Degree=Pos|Number=Plur
+29	железные	железный	ADJ	Case=Nom|Degree=Pos|Number=Plur
 30	дороги	дорога	NOUN	Case=Nom|Gender=Fem|Number=Plur
 31	.	.	PUNCT	_
 
@@ -3556,7 +3556,7 @@
 23	себе	себя	PRON	Case=Dat
 24	.	.	PUNCT	_
 
-1	Хорошо	хороший	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
+1	Хорошо	хорошо	ADV	Degree=Pos
 2	было	быть	VERB	Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 3	уже	уже	ADV	Degree=Pos
 4	то	то	PRON	Case=Nom|Gender=Neut|Number=Sing
@@ -4047,7 +4047,7 @@
 5	в	в	ADP	_
 6	сборе	сбор	NOUN	Case=Loc|Gender=Masc|Number=Sing
 7	—	—	PUNCT	_
-8	полон	полный	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+8	полон	полон	NOUN	Case=Nom|Gender=Masc|Number=Sing
 9	коридор	коридор	NOUN	Case=Nom|Gender=Masc|Number=Sing
 10	.	.	PUNCT	_
 
@@ -4543,7 +4543,7 @@
 1	—	—	PUNCT	_
 2	Он	он	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3
 3	мне	я	PRON	Case=Dat|Number=Sing|Person=1
-4	дорог	дорогой	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+4	дорог	дорога	NOUN	Case=Gen|Gender=Fem|Number=Plur
 5	...	...	PUNCT	_
 6	Я	я	PRON	Case=Nom|Number=Sing|Person=1
 7	боялся	бояться	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid
@@ -4758,7 +4758,7 @@
 
 1	Думали	думать	VERB	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act
 2	они	они	PRON	Case=Nom|Number=Plur|Person=3
-3	скорее	скорый	ADV	Degree=Cmp
+3	скорее	скорее	ADV	Degree=Cmp
 4	всего	всего	PRON	Case=Gen|Gender=Neut|Number=Sing
 5	о	о	ADP	_
 6	теплой	тёплый	ADJ	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing
@@ -4832,12 +4832,12 @@
 
 1	Когда	когда	CONJ	_
 2	он	он	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3
-3	служил	служилый	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+3	служил	служить	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 4	в	в	ADP	_
 5	армии	армия	NOUN	Case=Loc|Gender=Fem|Number=Sing
 6	—	—	PUNCT	_
 7	а	а	CONJ	_
-8	служил	служилый	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+8	служил	служить	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 9	он	он	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3
 10	в	в	ADP	_
 11	далеких	далёкий	ADJ	Case=Loc|Degree=Pos|Number=Plur
@@ -4850,7 +4850,7 @@
 18	,	,	PUNCT	_
 19	там	там	ADV	Degree=Pos
 20	зимой	зима	NOUN	Case=Ins|Gender=Fem|Number=Sing
-21	наваливало	наваливать	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
+21	наваливало	наваливать	VERB	Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 22	столько	столько	NUM	Case=Nom
 23	снега	снег	NOUN	Case=Gen|Gender=Masc|Number=Sing
 24	,	,	PUNCT	_
@@ -4858,7 +4858,7 @@
 26	сугробы	сугроб	NOUN	Case=Nom|Gender=Masc|Number=Plur
 27	его	он	DET	_
 28	вздымались	вздыматься	VERB	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Mid
-29	выше	высокий	ADV	Degree=Cmp
+29	выше	выше	ADV	Degree=Cmp
 30	человеческого	человеческий	ADJ	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing
 31	роста	рост	NOUN	Case=Gen|Gender=Masc|Number=Sing
 32	:	:	PUNCT	_
@@ -4934,7 +4934,7 @@
 1	В	в	ADP	_
 2	воротах	ворот	NOUN	Case=Loc|Number=Plur
 3	парка	парк	NOUN	Case=Gen|Gender=Masc|Number=Sing
-4	стояла	стоялый	ADJ	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short
+4	стояла	стоять	VERB	Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 5	большая	большой	ADJ	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing
 6	собака	собака	NOUN	Case=Nom|Gender=Fem|Number=Sing
 7	.	.	PUNCT	_
@@ -4956,7 +4956,7 @@
 15	зимнюю	зимний	ADJ	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing
 16	пору	пора	NOUN	Case=Acc|Gender=Fem|Number=Sing
 17	,	,	PUNCT	_
-18	облезла	облезлый	ADJ	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short
+18	облезла	облезть	VERB	Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 19	местами	место	NOUN	Case=Ins|Gender=Neut|Number=Plur
 20	до	до	ADP	_
 21	голой	голый	ADJ	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing
@@ -5212,7 +5212,7 @@
 13	но	но	CONJ	_
 14	он	он	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3
 15	великодушно	великодушно	ADV	Degree=Pos
-16	и	и	CONJ	_
+16	и	и	PART	_
 17	ей	она	PRON	Case=Dat|Gender=Fem|Number=Sing|Person=3
 18	давал	давать	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 19	прописку	прописка	NOUN	Case=Acc|Gender=Fem|Number=Sing
@@ -5434,7 +5434,7 @@
 25	зимой	зима	NOUN	Case=Ins|Gender=Fem|Number=Sing
 26	.	.	PUNCT	_
 
-1	Дошло	дошлый	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
+1	Дошло	дойти	VERB	Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 2	до	до	ADP	_
 3	того	тот	PRON	Case=Gen|Gender=Neut|Number=Sing
 4	,	,	PUNCT	_

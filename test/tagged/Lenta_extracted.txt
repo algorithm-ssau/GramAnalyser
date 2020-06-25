@@ -4087,7 +4087,7 @@
 10	будут	быть	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Notpast|VerbForm=Fin|Voice=Act
 11	обязаны	обязанный	ADJ	Degree=Pos|Number=Plur|Variant=Short
 12	сокращать	сокращать	VERB	VerbForm=Inf
-13	выбросы	выброс	NOUN	Case=Nom|Gender=Masc|Number=Plur
+13	выбросы	выброс	NOUN	Case=Acc|Gender=Masc|Number=Plur
 14	углекислого	углекислый	ADJ	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing
 15	газа	газ	NOUN	Case=Gen|Gender=Masc|Number=Sing
 16	и	и	CONJ	_
@@ -4422,7 +4422,7 @@
 13	Климентьев	климентьев	NOUN	Case=Nom|Gender=Masc|Number=Sing
 14	.	.	PUNCT	_
 
-1	Лимонова	лимоновый	NOUN	Case=Gen|Gender=Masc|Number=Sing
+1	Лимонова	лимоновый	NOUN	Case=Acc|Gender=Masc|Number=Sing
 2	арестовали	арестовать	VERB	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act
 3	7	7	NUM	NumForm=Digit
 4	апреля	апрель	NOUN	Case=Gen|Gender=Masc|Number=Sing
@@ -4584,7 +4584,7 @@
 10	секретно	секретно	ADV	Degree=Pos
 11	"	"	PUNCT	_
 12	был	быть	NOUN	Case=Nom|Gender=Masc|Number=Sing
-13	снят	снятой	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+13	снят	снятой	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Notpast|VerbForm=Fin|Voice=Act
 14	с	с	ADP	_
 15	научных	научный	ADJ	Case=Gen|Degree=Pos|Number=Plur
 16	разработок	разработка	NOUN	Case=Gen|Gender=Fem|Number=Plur
@@ -6190,7 +6190,7 @@
 3	Штаты	штат	NOUN	Case=Nom|Gender=Masc|Number=Plur
 4	—	—	PUNCT	_
 5	,	,	PUNCT	_
-6	сказала	сказать	NOUN	Case=Nom|Gender=Fem|Number=Sing
+6	сказала	сказать	ADJ	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short
 7	Райс	райс	NOUN	Case=Nom|Gender=Masc|Number=Sing
 8	—	—	PUNCT	_
 9	,	,	PUNCT	_
@@ -6202,7 +6202,7 @@
 15	этом	этот	DET	Case=Loc|Gender=Masc|Number=Sing
 16	вопросе	вопрос	NOUN	Case=Loc|Gender=Masc|Number=Sing
 17	и	и	CONJ	_
-18	помочь	помочь	NOUN	Case=Nom|Gender=Fem|Number=Sing
+18	помочь	помочь	NOUN	Case=Acc|Gender=Fem|Number=Sing
 19	палестинцам	палестинец	NOUN	Case=Dat|Gender=Masc|Number=Plur
 20	в	в	ADP	_
 21	подготовке	подготовка	NOUN	Case=Loc|Gender=Fem|Number=Sing

@@ -85,7 +85,7 @@
 10	—	—	PUNCT	_
 11	вдохновение	вдохновение	NOUN	Case=Nom|Gender=Neut|Number=Sing
 12	или	или	CONJ	_
-13	отчаяние	отчаяние	NOUN	Case=Nom|Gender=Neut|Number=Sing
+13	отчаяние	отчаяние	NOUN	Case=Acc|Gender=Neut|Number=Sing
 14	.	.	PUNCT	_
 
 1	Спасибо	спасибо	NOUN	Case=Nom|Gender=Neut|Number=Sing
@@ -96,7 +96,7 @@
 6	,	,	PUNCT	_
 7	особенно	особенно	ADV	Degree=Pos
 8	для	для	ADP	_
-9	начинающих	начинающий	NOUN	Case=Gen|Gender=Masc|Number=Plur
+9	начинающих	начинающий	ADJ	Case=Gen|Degree=Pos|Number=Plur
 10	,	,	PUNCT	_
 11	в	в	ADP	_
 12	частности	частность	NOUN	Case=Loc|Gender=Fem|Number=Sing
@@ -966,7 +966,7 @@
 2	он	он	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3
 3	лишь	лишь	PART	_
 4	чудом	чудо	NOUN	Case=Ins|Gender=Neut|Number=Sing
-5	жив	живой	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+5	жив	живой	ADJ	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing
 6	,	,	PUNCT	_
 7	побитый	побить	ADJ	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing
 8	и	и	CONJ	_
@@ -1567,11 +1567,11 @@
 8	фонаря	фонарь	NOUN	Case=Gen|Gender=Masc|Number=Sing
 9	—	—	PUNCT	_
 10	"	"	PUNCT	_
-11	светло	светлый	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
+11	светло	светло	ADV	Degree=Pos
 12	,	,	PUNCT	_
-13	тепло	тёплый	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
+13	тепло	тепло	NOUN	Case=Nom|Gender=Neut|Number=Sing
 14	,	,	PUNCT	_
-15	сказочно	сказочный	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
+15	сказочно	сказочно	ADV	Degree=Pos
 16	!	!	PUNCT	_
 
 1	Голосовые	голосовой	ADJ	Case=Nom|Degree=Pos|Number=Plur
@@ -1718,7 +1718,7 @@
 9	!	!	PUNCT	_
 
 1	Была	быть	VERB	Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
-2	организованна	организованный	ADJ	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short
+2	организованна	организованный	NOUN	Case=Nom|Gender=Fem|Number=Sing
 3	концертная	концертный	ADJ	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing
 4	программа	программа	NOUN	Case=Nom|Gender=Fem|Number=Sing
 5	и	и	CONJ	_
@@ -1816,7 +1816,7 @@
 
 1	И	и	CONJ	_
 2	Бог	бог	NOUN	Case=Nom|Gender=Masc|Number=Sing
-3	жалел	жалеть	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
+3	жалел	жалеть	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
 4	,	,	PUNCT	_
 5	что	что	CONJ	_
 6	сердце	сердце	NOUN	Case=Nom|Gender=Neut|Number=Sing
@@ -2076,7 +2076,7 @@
 7	своей	свой	DET	Case=Loc|Gender=Fem|Number=Sing
 8	жизни	жизнь	NOUN	Case=Loc|Gender=Fem|Number=Sing
 9	самым	самый	ADJ	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing
-10	необходимым	необходимый	ADJ	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing
+10	необходимым	необходимый	ADJ	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing
 11	для	для	ADP	_
 12	выживания	выживание	NOUN	Case=Gen|Gender=Neut|Number=Sing
 13	,	,	PUNCT	_
@@ -2222,7 +2222,7 @@
 1	Эта	этот	DET	Case=Nom|Gender=Fem|Number=Sing
 2	группа	группа	NOUN	Case=Nom|Gender=Fem|Number=Sing
 3	уже	уже	ADV	Degree=Pos
-4	переросла	перерослый	ADJ	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short
+4	переросла	перерасти	VERB	Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 5	потребность	потребность	NOUN	Case=Nom|Gender=Fem|Number=Sing
 6	в	в	ADP	_
 7	накоплении	накопление	NOUN	Case=Loc|Gender=Neut|Number=Sing
@@ -2487,7 +2487,7 @@
 3	формы	форма	NOUN	Case=Acc|Gender=Fem|Number=Plur
 4	жизни	жизнь	NOUN	Case=Gen|Gender=Fem|Number=Sing
 5	не	не	PART	_
-6	одет	одетый	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+6	одет	одеть	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Notpast|VerbForm=Fin|Voice=Act
 7	.	.	PUNCT	_
 
 1	И	и	CONJ	_
@@ -2736,7 +2736,7 @@
 6	,	,	PUNCT	_
 7	что	что	CONJ	_
 8	просто	просто	ADV	Degree=Pos
-9	пришло	пришлый	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
+9	пришло	прийти	VERB	Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 10	время	время	NOUN	Case=Nom|Gender=Neut|Number=Sing
 11	.	.	PUNCT	_
 
@@ -3352,7 +3352,7 @@
 8	вредная	вредный	ADJ	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing
 9	,	,	PUNCT	_
 
-1	Что	что	PRON	Case=Acc|Gender=Neut|Number=Sing
+1	Что	что	PRON	Case=Nom|Gender=Neut|Number=Sing
 2	ревнива	ревнивый	ADJ	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short
 3	я	я	PRON	Case=Nom|Number=Sing|Person=1
 4	за	за	ADP	_
@@ -3587,7 +3587,7 @@
 7	не	не	PART	_
 
 1	И	и	CONJ	_
-2	идеален	идеальный	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+2	идеален	идеальный	NOUN	Case=Nom|Gender=Masc|Number=Sing
 3	...	...	PUNCT	_
 4	с	с	ADP	_
 5	выбритым	выбрить	ADJ	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing
@@ -3607,7 +3607,7 @@
 3	...	...	PUNCT	_
 4	кредитка	кредитка	NOUN	Case=Nom|Gender=Fem|Number=Sing
 5	и	и	CONJ	_
-6	права	право	NOUN	Case=Gen|Gender=Neut|Number=Sing
+6	права	право	NOUN	Case=Nom|Gender=Neut|Number=Plur
 7	...	...	PUNCT	_
 
 1	В	в	ADP	_
@@ -3715,7 +3715,7 @@
 8	электрошокером	электрошокер	NOUN	Case=Ins|Gender=Masc|Number=Sing
 9	.	.	PUNCT	_
 
-1	Думаю	думать	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Notpast|VerbForm=Fin|Voice=Act
+1	Думаю	думать	NOUN	Case=Dat|Gender=Masc|Number=Sing
 2	так	так	ADV	Degree=Pos
 3	же	же	PART	_
 4	должно	должный	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
@@ -4225,8 +4225,8 @@
 3	42-46	42-46	NUM	NumForm=Digit
 4	,	,	PUNCT	_
 5	на	на	ADP	_
-6	мал	маленький	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
-7	рост	рост	NOUN	Case=Acc|Gender=Masc|Number=Sing
+6	мал	маленький	NOUN	Case=Acc|Gender=Masc|Number=Sing
+7	рост	рост	NOUN	Case=Nom|Gender=Masc|Number=Sing
 8	1000	1000	NUM	NumForm=Digit
 
 1	Будет	быть	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Notpast|VerbForm=Fin|Voice=Act
@@ -4267,7 +4267,7 @@
 4	что	что	PRON	Case=Nom|Gender=Neut|Number=Sing
 5	такое	такой	DET	Case=Nom|Gender=Neut|Number=Sing
 6	концентрация	концентрация	NOUN	Case=Nom|Gender=Fem|Number=Sing
-7	и	и	CONJ	_
+7	и	и	PART	_
 8	для	для	ADP	_
 9	чего	что	PRON	Case=Gen|Gender=Neut|Number=Sing
 10	она	она	PRON	Case=Nom|Gender=Fem|Number=Sing|Person=3
@@ -4380,7 +4380,7 @@
 1	Кто	кто	PRON	Case=Nom|Number=Sing
 2	такой	такой	DET	Case=Nom|Gender=Masc|Number=Sing
 3	заботливый	заботливый	ADJ	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing
-4	продумал	продумать	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+4	продумал	продумать	NOUN	Case=Nom|Gender=Masc|Number=Sing
 5	для	для	ADP	_
 6	вас	вы	PRON	Case=Gen|Number=Plur|Person=2
 7	миф	миф	NOUN	Case=Nom|Gender=Masc|Number=Sing
@@ -5091,7 +5091,7 @@
 1	Каждый	каждый	DET	Case=Nom|Gender=Masc|Number=Sing
 2	парень	парень	NOUN	Case=Nom|Gender=Masc|Number=Sing
 3	,	,	PUNCT	_
-4	обязан	обязанный	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+4	обязан	обязать	VERB	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 5	обнять	обнять	VERB	VerbForm=Inf
 6	свою	свой	DET	Case=Acc|Gender=Fem|Number=Sing
 7	:	:	PUNCT	_
@@ -6110,7 +6110,7 @@
 25	и	и	CONJ	_
 26	скажите	сказать	VERB	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act
 27	,	,	PUNCT	_
-28	что	что	PRON	Case=Nom|Gender=Neut|Number=Sing
+28	что	что	CONJ	_
 29	обязательно	обязательно	ADV	Degree=Pos
 30	вернетесь	вернуться	VERB	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Mid
 31	за	за	ADP	_
@@ -6197,7 +6197,7 @@
 6	он	он	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3
 7	рядом	ряд	ADV	Degree=Pos
 8	,	,	PUNCT	_
-9	жив	живой	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
+9	жив	живой	VERB	Tense=Past|VerbForm=Conv|Voice=Act
 10	и	и	CONJ	_
 11	здоров	здоровый	ADJ	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short
 12	,	,	PUNCT	_
@@ -6268,7 +6268,7 @@
 32	.	.	PUNCT	_
 
 1	Ведь	ведь	PART	_
-2	это	это	PRON	Case=Nom|Gender=Neut|Number=Sing
+2	это	это	PRON	Case=Acc|Gender=Neut|Number=Sing
 3	нужно	нужный	ADJ	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short
 4	тратиться	тратиться	VERB	VerbForm=Inf
 5	на	на	ADP	_
@@ -6289,7 +6289,7 @@
 6	нужны	нужный	ADJ	Degree=Pos|Number=Plur|Variant=Short
 7	.	.	PUNCT	_
 
-1	Прошло	прошлый	ADV	Degree=Pos
+1	Прошло	пройти	VERB	Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act
 2	несколько	несколько	NUM	Case=Nom
 3	месяцев	месяц	NOUN	Case=Gen|Gender=Masc|Number=Plur
 4	и	и	CONJ	_
@@ -6572,7 +6572,7 @@
 5	меня	я	PRON	Case=Acc|Number=Sing|Person=1
 6	таким	такой	DET	Case=Ins|Gender=Masc|Number=Sing
 7	,	,	PUNCT	_
-8	какой	какой	DET	Case=Nom|Gender=Masc|Number=Sing
+8	какой	какой	DET	Case=Ins|Gender=Fem|Number=Sing
 9	я	я	PRON	Case=Nom|Number=Sing|Person=1
 10	есть	быть	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Notpast|VerbForm=Fin|Voice=Act
 11	!	!	PUNCT	_
