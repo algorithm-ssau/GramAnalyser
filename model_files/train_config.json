@@ -1,9 +1,9 @@
 {
-    "dump_model_freq": 1,
-    "epochs_num": 10,
+    "dump_model_freq": 2,
+    "epochs_num": 160,
     "external_batch_size": 5000,
     "batch_size": 256,
-    "random_seed": 42,
+    "random_seed": 43,
     "rewrite_model": true,
     "sentence_len_groups": [
         [
@@ -27,5 +27,5 @@
             14
         ]
     ],
-    "test_part": 0.05
+    "test_part": 0.2
 }

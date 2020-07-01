@@ -293,8 +293,10 @@ class LSTMModel:
                     answer.append(num)
                 for tag, predicted_tag in zip(real_sentence_tags, answer):
                     tag = tag[0]
+                    pos = self.grammeme_vectorizer_output.get_name_by_index(tag).split("#")[0]
+                    predicted_pos = self.grammeme_vectorizer_output.get_name_by_index(predicted_tag).split("#")[0]
                     word_count += 1
-                    if tag != predicted_tag:
+                    if pos != predicted_pos:
                         word_errors += 1
                         sentence_has_errors = True
                 sentence_count += 1

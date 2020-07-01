@@ -10,7 +10,7 @@ class BuildModelConfig(object):
         self.gram_hidden_size = 30
         self.gram_dropout = 0.3
 
-        self.use_chars = True ### use_chars или use_word_embeddings - True
+        self.use_chars = False ### use_chars или use_word_embeddings - True
         self.char_max_word_length = 30
         self.char_embedding_dim = 10 
         self.char_function_hidden_size = 128
@@ -20,7 +20,7 @@ class BuildModelConfig(object):
         self.use_word_embeddings = False ### use_chars или use_word_embeddings - True
         self.word_embedding_dropout = 0.2
         self.word_max_count = 10000
-        self.use_trained_char_embeddings = True
+        self.use_trained_char_embeddings = False
         self.char_model_config_path = None
         self.char_model_weights_path = None
 
@@ -60,11 +60,12 @@ class TrainConfig(object):
         self.gram_dict_output = None
         self.word_dictionary = None
         self.char_set_path = None
+        
         self.rewrite_model = True
         self.external_batch_size = 5000  # размер общего набора данных, который читается из файлов.
         self.batch_size = 256  # размер разделенного набора данных.
         self.sentence_len_groups = ((1, 6), (7, 14), (15, 25), (26, 40), (40, 50))  # разбиение на бакеты
-        self.test_part = 0.05  # на какой части выборки оценивать качество.
+        self.test_part = 0.1  # на какой части выборки оценивать качество.
         self.epochs_num = 50  # количество эпох.
         self.dump_model_freq = 1  # насколько часто сохранять модель (1 = каждый батч).
         self.random_seed = 43  # зерно для случайного генератора.

@@ -45,7 +45,6 @@ class Loader(object):
         Обработка строки в корпусе с морфоразметкой.
         """
         i, text, lemma, pos_tag, grammemes = line.strip().split("\t")[0:5]
-        print(text, lemma, pos_tag)
         # Заполняем словарь.
         self.word_dictionary.add_word(text.lower())
         # набор уникальных символов

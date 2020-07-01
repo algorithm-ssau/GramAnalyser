@@ -14,7 +14,7 @@
     "rnn_n_layers": 2,
     "use_chars": true,
     "use_gram": true,
-    "use_trained_char_embeddings": true,
+    "use_trained_char_embeddings": false,
     "use_word_embeddings": false,
     "word_embedding_dropout": 0.2,
     "word_max_count": 100000,
