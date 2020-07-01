@@ -1,29 +1,29 @@
 # Веб-приложение "Морфологический анализ текста" (GramAnalyser)
 
-h2 Назначение веб-приложения
+## Назначение веб-приложения
 Приложение анализирует морфологию для введенного русского текста. Работает на базе рекуррентной нейронной сети LSTM.
 Находит леммы (начальные формы) всех слов и предсказывает их части речи.
 
-h2 Разворачивание
+## Развертывание
 Веб-приложение написано на Python с использованием фрэймворка Django.
 Для разворачивания приложения необходимо установить Python >= 3.7 с официального сайта.
 Также необходимо установить все используемые в приложении библиотеки. Для это нужно выполнить следующие команды в командной строке:
 
-> // OS Windows
-> pip install -r requirements.txt
-> // Mac OS или Linux
-> pip3 install -r requirements.txt
+    // OS Windows
+    pip install -r requirements.txt
+    // Mac OS или Linux
+    pip3 install -r requirements.txt
 
-h2 Запуск
+## Запуск
 Для запуска веб-приложения нужно перейти в командной строке в папку с файлом manage.py и выполнить команду:
-> // OS Windows
-> python manage.py runserver
-> // Mac OS or Linux
-> python3 manage.py runserver
+    // OS Windows
+    python manage.py runserver
+    // Mac OS or Linux
+    python3 manage.py runserver
 
 Для запуска проекта из консоли необходимо перейти в папку с файлом main.py, раскомментировать нужный блок (Обучение, тест или анализ текста)
 и выполнить команду:
-> // OS Windows
-> python main.py
-> // Mac OS or Linux
-> python3 main.py
+    // OS Windows
+    python main.py
+    // Mac OS or Linux
+    python3 main.py
