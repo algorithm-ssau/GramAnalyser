@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Django Forms</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+    <table style="padding: 10px;">
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Анализировать" style="padding: 10px; margin-top: 10px; margin-right: 9000px; margin-left: 14px; margin-bottom: 10px;">
+
+    <b style="padding: 14px; margin-bottom: 20px; padding-top: 10px">{{ text }}</b>
+    <table style="padding-left: 10px;  padding-top: 10px; border: none;" name="table" border=1>
+            <tr>
+                <th>Лемма</th>
+                <th>Часть речи</th>
+                <th>Частота</th>
+            </tr>
+            {% for group in groups %} 
+                {% for wordForm in group %} 
+                <tr>
+                    <td>{{ wordForm.normal_form }}</td>
+                    <td>{{ wordForm.pos }} </td>
+                    <td>{{ wordForm.frequency }}</td>
+                </tr>
+                {% endfor %}
+            {% endfor %}
+    </table>
+</form>
+</body>
+</html>
