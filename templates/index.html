@@ -10,9 +10,12 @@
     <table style="padding: 10px;">
         {{ form.as_table }}
     </table>
-    <input type="submit" value="Анализировать" style="padding: 10px; margin-top: 10px; margin-right: 9000px; margin-left: 14px; margin-bottom: 10px;">
+    <input type="submit" value="Произвести морфоразбор" style="padding: 10px; margin-top: 10px; margin-right: 9000px; margin-left: 14px; margin-bottom: 10px;">
 
-    <b style="padding: 14px; margin-bottom: 20px; padding-top: 10px">{{ text }}</b>
+    <div style="width: 700px">
+       <b style="padding: 14px; margin-bottom: 20px; padding-top: 10px">{{ text }}</b>
+    </div>
+
     <table style="padding-left: 10px;  padding-top: 10px; border: none;" name="table" border=1>
             <tr>
                 <th>Лемма</th>
